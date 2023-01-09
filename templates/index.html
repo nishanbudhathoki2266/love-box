@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>&hearts; माया को बट्टा &hearts;</title>
+    <link
+      rel="stylesheet"
+      href="{{url_for('static', filename='css/main.css')}}"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <script defer src="{{url_for('static', filename='js/script.js')}}"></script>
+  </head>
+  <body>
+    <main class="main-content">
+      <div class="flashes">
+        {% with messages = get_flashed_messages() %} {% if messages %}
+        <ul class="flash_messages">
+          {% for message in messages %}
+          <li class="flash-messages__items">
+            {{ message }}
+            <span><a class="flash-messages__btn" href="#">&cross;</a></span>
+          </li>
+          {% endfor %}
+        </ul>
+        {% endif %} {% endwith %}
+      </div>
+
+      <div class="love-box">
+        <h1 class="heading-primary">
+          <span class="heading-primary--main u-margin-bottom"
+            >माया को बट्टा
+          </span>
+          <span class="heading-primary--sub u-text-center"
+            >"Distance doesn't matter when two souls are united. Express special
+            affections. <3"</span
+          >
+        </h1>
+        <a href="#" class="btn btn--open-form btn--white">Send them love</a>
+      </div>
+
+      <!-- Form  -->
+      <div class="form-container hidden">
+        <form id="form" action="" method="post">
+          <h3>Send some love</h3>
+          <h4>Please make sure to check the texts before sending</h4>
+          <fieldset>
+            <input placeholder="Your love box id" type="text" autofocus />
+          </fieldset>
+          <fieldset>
+            <input
+              placeholder="Your message to them..."
+              type="text"
+              id="messageBox"
+              name="messageBox"
+              required
+              autofocus
+            />
+          </fieldset>
+          <fieldset>
+            <button
+              name="submit"
+              type="submit"
+              id="contact-submit"
+              data-submit="...Sending"
+            >
+              Send
+            </button>
+          </fieldset>
+        </form>
+
+        <a href="#" class="btn btn--back btn--white">&lArr; Back to Home</a>
+      </div>
+    </main>
+  </body>
+</html>
