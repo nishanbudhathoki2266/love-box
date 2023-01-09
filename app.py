@@ -14,7 +14,7 @@ def index():
             r = requests.post('http://lovebox.pythonanywhere.com/', json = {"message" : message})
             response = r.json()
             flash('Message sent successfully')
-        except ConnectionError as e:    # This is the correct syntax
+        except ConnectionError as e:    
             flash("Uh oh! Looks like the API is under construction!")
             return redirect(url_for('index'))
     return render_template('index.html')    
