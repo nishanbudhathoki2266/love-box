@@ -4,6 +4,7 @@ from flask_restful import Resource, Api
 app = Flask(__name__)
 api = Api(app)
 
+# default message
 messages = {
     1:{'message':'Merry Christmas'},
 }

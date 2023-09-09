@@ -2,7 +2,6 @@ from flask import Flask, render_template, redirect, request, flash, url_for
 import requests
 from requests.exceptions import ConnectionError
 
-
 app = Flask(__name__)
 app.secret_key = 'mysecretkey'
 
@@ -14,11 +13,10 @@ def index():
             r = requests.post('http://lovebox.pythonanywhere.com/', json = {"message" : message})
             response = r.json()
             flash('Message sent successfully')
-        except ConnectionError as e:    # This is the correct syntax
-            flash("Uh oh! Looks like the API is under construction!")
+        except ConnectionError as e:    
+            flash("Uh oh! Looks like the API isn't fully constructed!")
             return redirect(url_for('index'))
     return render_template('index.html')    
-
 
 if __name__ == '__main__':
     app.run(debug=True, port=8080, host='0.0.0.0')
