@@ -10,10 +10,13 @@ Nobody expects to receive love notes by text every morning, but everyone loves r
 
 # So how it works?
 
-1 -> Send messages to the Lovebox through an app.
-2 -> The love box receives your message at the other end.
-3 -> The heart of the Lovebox immediately rotates when your loved one gets a message (on the other end). It continues rotating until your loved one opens the box and reads the message.
-4 -> Your loved one can then close the box and wait until next message ;)
+## 1 -> Send messages to the Lovebox through an app.
+
+## 2 ->The love box receives your message at the other end.
+
+## 3 -> The heart of the Lovebox immediately rotates when your loved one gets a message (on the other end). It continues rotating until your loved one opens the box and reads the message.
+
+## 4 -> Your loved one can then close the box and wait until next message ;)
 
 # Technical aspects
 
