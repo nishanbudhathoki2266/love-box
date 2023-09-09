@@ -1,6 +1,6 @@
 # love-box
 
-An IoT based DIY project, love-box inspired from https://en.lovebox.love/. The love-box will make you and your loved ones happier by sharing special affections.
+An IoT based DIY project, love-box inspired from https://en.lovebox.love/. The love-box will make you and your loved ones happier by sharing special affections. See it on : https://www.youtube.com/watch?v=cHV6fy3P4rQ
 
 # Summary
 
