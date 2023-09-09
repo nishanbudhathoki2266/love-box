@@ -14,7 +14,11 @@ def index():
             response = r.json()
             flash('Message sent successfully')
         except ConnectionError as e:    
+<<<<<<< HEAD
             flash("Uh oh! Looks like the API isn't fully constructed!")
+=======
+            flash("Uh oh! Looks like the API is under construction!")
+>>>>>>> 2ba794d11e39c944a82864b1b5b365d5b9cc514d
             return redirect(url_for('index'))
     return render_template('index.html')    
 
